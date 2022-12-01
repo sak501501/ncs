@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캠핑장</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="/javascript/jquery-1.12.3.js"></script>
+    <script src="/javascript/script.js" defer type="text/javascript"></script>
+   
+
+    <!-- 박스 슬라이더  -->
+<br><br><br>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+  <script>
+
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+            mode: 'fade', 
+
+            auto: true,	//자동으로 슬라이드 
+
+            controls : true,	//좌우 화살표	
+
+            autoControls: true,	//stop,play 
+
+            pager:true,	//페이징 
+
+            pause: 3000, 
+
+            autoDelay: 0,	
+
+            slideWidth: 600,  //이미지 박스 크기설정
+            
+
+            speed: 500, 
+
+            stopAutoOnclick:true 
+
+            
+                });
+            });
+  </script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="#"><img id="logo" src="/images/fire.png" alt="로고"></a>
+            </div>
+            <nav class="menu">
+                <ul class="navi">
+                    <li>
+                        <a href="#">축제소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">초대말씀</a></li>
+                            <li><a href="#">축제개요</a></li>
+                            <li><a href="#">축제연혁</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">행사안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">셔틀버스안내</a></li>
+                            <li><a href="#">행사안내</a></li>
+                            <li><a href="#">행사일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보마당</a>
+                        <ul class="submenu">
+                            <li><a href="#">축제소식</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">음식레시피</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">참여마당</a>
+                        <ul class="submenu">
+                            <li><a href="#">참가후기</a></li>
+                            <li><a href="#">포토갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<div class="slider">
+  <div><img src="images/camping-1845906_1920.jpg" alt="이미지1"></div>
+  <div><img src="images/people-4817872_1920.jpg" alt="이미지2"></div>
+  <div><img src="images/tree-838667_1280.jpg" alt="이미지2"></div>
+
+
+</div>
+
+
+
+    <div class="contents">
+        <div class="notice">
+            <div class="tab">
+                <h4>공지사항</h4>
+            </div>
+            <ul>
+                <li><a href="#">캠핑 이야기 
+                <span>2022.02.14</span></a></li>
+                <li><a href="#">가을 캠핑 즐기기
+                <span>2022.02.14</span></a></li>
+                <li><a href="#">바베큐 파티 안내 
+                <span>2022.02.14</span></a></li>
+                <li><a href="#">체험학습
+                <span>2022.02.14</span></a></li>
+                        
+                    
+            </ul>
+        </div>
+        <div class="gallery">
+        <div class="tab">
+            <h4>갤러리</h4>
+        </div>
+        <ul>
+            <li><a href="#"><img src="images/camping-1845906_1920.jpg" alt="이미지1"></a></li>
+            <li><a href="#"><img src="images/people-4817872_1920.jpg" alt="이미지2"></a></li>
+            <li><a href="#"><img src="images/tree-838667_1280.jpg" alt="이미지3"></a></li>
+        </ul>
+        </div>
+        <div class="shortcut">
+            <a href="#">
+                <img src="images/tree-7619534_1920.jpg" alt="바로가기 이미지">
+                <span class="sctext">바로가기</span>
+
+            </a>
+        </div>
+        <div id="modal">
+            <div class="momal_up">
+                <div class="uptitle">공지사항</div>
+                <div class="upbody"> 문의사항은 사무실로 전화주세요</div>
+                <div class="btn">닫기</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="bottom">
+            <div class="copy">
+               copyright &#169; by webdesign. all not reserve
+            </div>
+            <div class="site">
+                <div class="sns">
+                    <ul>
+                        <li><a href="#"><img src="images/sns1.jpg" alt="이미지1"></a></li>
+                        <li><a href="#"><img src="images/sns2.jpg" alt="이미지2"></a></li>
+                        <li><a href="#"><img src="images/sns3.jpg" alt="이미지3"></a></li>
+                    </ul>
+                </div>
+                <div class="familysite">
+                   <select name="sitelist">
+                    <option value="#">패밀리사이트1</option>
+                    <option value="#">패밀리사이트2</option>
+                    <option value="#">패밀리사이트3</option>
+
+                   </select>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    <script src="/javascript/script.js"></script>  
+</body>
+</html>
